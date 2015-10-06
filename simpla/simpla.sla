@@ -1,0 +1,15 @@
+{
+start { #simpla_header.h stmt ,
+stmt ' \ta.addState\x20(\" state
+     } #simpla_end.h end ,
+state + & state_close ,
+state_close ' \");\n\ta.addTransition\x20(\" input ,
+input + & comma1 ,
+comma1 ' \",\x20\" output ,
+output + & comma2 ,
+comma2 ' \",\x20\" next ,
+next + & stmt_end ,
+stmt_end , \");\n stmt
+         ' \");\n\ta.addTransition\x20(\" input ,
+}
+
